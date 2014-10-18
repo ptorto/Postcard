@@ -71,7 +71,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="177" width="289" height="30"/>
+                                    <rect key="frame" x="16" y="211" width="289" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mensaje" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hya-E0-c0J">
@@ -79,7 +79,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="221" width="289" height="30"/>
+                                    <rect key="frame" x="16" y="255" width="289" height="30"/>
                                 </variation>
                             </textField>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0J4-nm-5gg">
@@ -88,7 +88,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="72" width="201" height="75"/>
+                                    <rect key="frame" x="16" y="122" width="201" height="80"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzo-CH-1Yf">
@@ -98,12 +98,21 @@
                                 <state key="normal" title="Enviar"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                    <rect key="frame" x="16" y="270" width="289" height="31"/>
+                                    <rect key="frame" x="16" y="304" width="289" height="31"/>
                                 </variation>
                                 <connections>
                                     <action selector="enviarMensaje:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QdZ-bz-SxE"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pez-Rj-5ZA">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="72" width="201" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -113,6 +122,7 @@
                                 <exclude reference="Hya-E0-c0J"/>
                                 <exclude reference="0J4-nm-5gg"/>
                                 <exclude reference="Mzo-CH-1Yf"/>
+                                <exclude reference="pez-Rj-5ZA"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -122,6 +132,7 @@
                                 <include reference="Hya-E0-c0J"/>
                                 <include reference="0J4-nm-5gg"/>
                                 <include reference="Mzo-CH-1Yf"/>
+                                <include reference="pez-Rj-5ZA"/>
                             </mask>
                         </variation>
                     </view>
@@ -129,6 +140,7 @@
                         <outlet property="botonEnviar" destination="Mzo-CH-1Yf" id="O2N-tE-m2n"/>
                         <outlet property="mensajeTextField" destination="Hya-E0-c0J" id="Yrj-nw-hKi"/>
                         <outlet property="messageLabel" destination="0J4-nm-5gg" id="siS-qB-zH2"/>
+                        <outlet property="nombreLabel" destination="pez-Rj-5ZA" id="yyx-x7-uc1"/>
                         <outlet property="nombreTextField" destination="sDp-ig-kRx" id="Cdr-1w-krb"/>
                     </connections>
                 </viewController>

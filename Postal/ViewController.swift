@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var nombreTextField: UITextField!
     @IBOutlet weak var mensajeTextField: UITextField!
     @IBOutlet weak var botonEnviar: UIButton!
+    @IBOutlet weak var nombreLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -28,14 +29,20 @@ class ViewController: UIViewController {
     }
 
     @IBAction func enviarMensaje(sender: UIButton){
-        messageLabel.text = nombreTextField.text
-        messageLabel.hidden = false
-        messageLabel.textColor = UIColor.redColor()
+        messageLabel.text = mensajeTextField.text;
+        messageLabel.hidden = false;
+        messageLabel.textColor = UIColor.redColor();
         
-        botonEnviar.setTitle("Enviado", forState: UIControlState.Normal)
+        nombreLabel.text = nombreTextField.text;
+        nombreLabel.hidden = false;
+        nombreLabel.textColor = UIColor.blueColor();
         
-        nombreTextField.text = ""
-        nombreTextField.resignFirstResponder()
+        botonEnviar.setTitle("Enviado", forState: UIControlState.Normal);
+        
+        nombreTextField.text = "";
+        nombreTextField.resignFirstResponder();
+        mensajeTextField.text = "";
+        mensajeTextField.resignFirstResponder();
     }
     
 }
